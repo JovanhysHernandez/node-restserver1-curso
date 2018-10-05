@@ -131,7 +131,7 @@ app.post('/google', async (req, res) => {
                 //Si el usuario no existe en nuestra base de datos 
                 let usuario = new Usuario();
 
-                usuario.name = googleUser.nombre;
+                usuario.name = googleUser.name;
                 usuario.email = googleUser.email;
                 usuario.img = googleUser.img;
                 usuario.google = true;
