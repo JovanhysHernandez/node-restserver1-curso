@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 let categoriaSchema = new Schema({
-    decripcion: { type: String, unique: true, required: [true,] },
-    usuario: {type: Schema.Types.ObjectId, ref: 'Usuario' }
+    descripcion: { type: String, unique: true, required: [true, 'La descripción es obligatoria'] },
+    usuario: { type: Schema.Types.ObjectId, ref: 'Usuario' }
 });
 
 
